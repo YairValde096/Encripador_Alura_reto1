@@ -1,0 +1,41 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logica.js"></script>
+</head>
+<body >
+    <div id="Logo" >
+       
+        <img id= "Logo"src="Recursos/PALETA_PANTALLA-02.png" alt="Logo">
+        
+
+    </div>
+    <div id="frame1">
+        <div id="Advertencia">Solo letras minúsculas y sin acentos</div> 
+        <img id="alr"src="Recursos/Alert.png" alt="">
+        
+    </div>
+    
+    <div id="Botones" >
+        
+        
+        <button id="BtnEncriptar" onclick="Encriptar()">Encriptar!</button>
+        <button id="BtnDesencriptar" onclick="Desencriptar()">Desencriptar</button>
+        <button id="trash" onclick="limpiar()"><img src="Recursos/trash.png"></button>
+
+    </div>
+    <div id="PantallaSalida" >
+        <img src="Recursos/mascota.png">
+        <div id="TextoSalida">Ningún mensaje fue encontrado
+            <div id="TextoSalida2">Ingresa el texto que desees encriptar o desencriptar.</div>            
+        </div>
+    </div>
+    
+    <!--<input type="text" id="ingreso" placeholder="Ingrese el texto aqui" >-->
+    <textarea id="ingreso" cols="30" rows="10"placeholder="Ingrese el texto aqui"></textarea>
+</body>
+</html>

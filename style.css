@@ -1,0 +1,381 @@
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: rgba(215, 72, 84, .2);
+
+
+}
+
+#Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    left: 40px;
+    top: 40px;
+}
+
+#PantallaSalida {
+    position: absolute;
+    width: 400px;
+    height: 911px;
+    left: 1000px;
+    top: 40px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    overflow-y: auto;
+}
+
+#PantallaSalida img {
+
+    width: 336px;
+    height: 304px;
+    display: table-cell;
+    vertical-align: middle;
+    overflow-y: auto;
+}
+
+
+
+#TextoSalida,
+#TextoSalidaEnc,
+#TextoSalidaDes {
+    height: 50%;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    font-family: 'Inter';
+    font-style: normal;
+
+
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #343A40;
+    max-height: 45px;
+    padding: 10px;
+
+}
+
+#TextoSalida,
+#TextoSalida2 {
+    width: 336px;
+    font-family: 'Inter';
+    text-align: center;
+    height: 45px;
+    color: rgb(85, 130, 94);
+}
+
+#TextoSalidaEnc,
+#TextoSalidaDes {
+    max-height: 50%;
+}
+
+#TextoSalida2,
+#Mensajes {
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    max-width: 350px;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+}
+
+#TextoExplicativo {
+    width: 205px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+button:hover {
+    cursor: hand;
+}
+
+#Botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
+
+}
+
+
+#BtnEncriptar,
+#BtnDesencriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 24px;
+    justify-content: center;
+}
+
+#BtnEncriptar {
+    background: rgb(215, 72, 84);
+    color: #FFFFFF;
+}
+
+#ingreso {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: transparent;
+    border: transparent;
+    /* identical to box height, or 48px */
+
+
+    /* Dark blue/dark-blue-300 */
+
+    color: rgb(85, 130, 94);
+}
+
+#frame1 {
+    /* Frame 1 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+#frame1 img {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    inset: 0;
+
+    /* Gray/gray-400 */
+    background-color: #495057;
+}
+
+#Advertencia {
+    display: flex;
+    width: 205px;
+    height: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* Gray/gray-400 */
+    color: #495057;
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+}
+
+#copyButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#Mensajes {
+    display: flex;
+    border-style: dotted;
+    border-color: #F3F5FC;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+#Mensajes p {
+    width: 85%;
+    max-width: 85%;
+
+}
+
+#Mensajes button {
+    width: 15%;
+    height: 100%;
+
+}
+
+#Mensajes img {
+    width: 100%;
+    height: 100%;
+}
+
+#trash {
+    width: 12%;
+    height: 100%;
+    border-radius: 24px;
+    transition: 1s;
+    height: 67px;
+
+}
+
+#trash img {
+    width: 75%;
+    height: 75%;
+
+}
+
+#trash:hover {
+    filter: drop-shadow(5px -10px 1px #3a3535);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.aparece {
+    animation-name: aparecer;
+    animation-duration: .5s;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+        height: auto;
+        display: inline-grid;
+        grid-template-rows: 120px 1fr 1fr 120px;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        padding-left: 1em;
+        overflow: auto;
+        
+    }
+
+    #Logo {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+
+    #frame1 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        position: relative;
+        left: auto;
+        top: 50px;
+
+    }
+
+    #ingreso {
+        grid-row: 2 / 4;
+        grid-column: 1 / span 2;
+        font-family: 'Inter';
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        background: transparent;
+        border: transparent;
+        color: rgb(85, 130, 94);
+        left: 1em;
+        width: 95%;
+        height: 500px;
+        top: auto;
+    }
+
+    #PantallaSalida {
+        position: relative;
+        grid-row: 3 / 4;
+        grid-column: 1 / span 2;
+        left: 1em;
+        width: 95%;
+        height: 600px;
+        top: auto;
+    }
+
+    #Botones {
+        position: relative;
+        grid-row: 4 / 4;
+        grid-column: 1 / span 2;
+        left: 1em;
+        width: 95%;
+        top: 1em;
+    }
+    #BtnEncriptar,
+#BtnDesencriptar {
+    width: 38%;
+}
+
+
+}
