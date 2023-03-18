@@ -232,6 +232,13 @@ button:hover {
     order: 1;
 }
 
+#alerta {
+    
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: none;
+}
+
 #copyButton {
     background-color: #4CAF50;
     border: none;
@@ -306,17 +313,24 @@ button:hover {
     animation-duration: .5s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    #alerta {
+        display: table-cell;
+        width: max-content;
+    grid-row: 5 / 5;
+    grid-column: 2 / 4;
+    top: -2em;
+    }
     body {
-        width: auto;
+        width: min-content;
         height: auto;
         display: inline-grid;
-        grid-template-rows: 120px 1fr 1fr 120px;
+        grid-template-rows: 120px 0.9fr 1fr 120px;
         grid-template-columns: 1fr 3fr;
-        gap: 10px;
-        padding-left: 1em;
-        overflow: auto;
+        gap: 0.1em;
         
+        overflow: auto;
+
     }
 
     #Logo {
@@ -349,9 +363,10 @@ button:hover {
         border: transparent;
         color: rgb(85, 130, 94);
         left: 1em;
-        width: 95%;
+        width: 90%;
         height: 500px;
         top: auto;
+        padding: 0%;
     }
 
     #PantallaSalida {
@@ -359,9 +374,18 @@ button:hover {
         grid-row: 3 / 4;
         grid-column: 1 / span 2;
         left: 1em;
-        width: 95%;
+        width: 90%;
         height: 600px;
         top: auto;
+        justify-items: center;
+    }
+    #PantallaSalida img{
+        width: 80%;
+        height: 80%;
+    }
+    #PantallaSalida div{
+        width: 80%;
+        height: 80%;
     }
 
     #Botones {
@@ -369,13 +393,21 @@ button:hover {
         grid-row: 4 / 4;
         grid-column: 1 / span 2;
         left: 1em;
-        width: 95%;
+        width: 90%;
         top: 1em;
+        gap: 1em;
     }
+
     #BtnEncriptar,
-#BtnDesencriptar {
-    width: 38%;
-}
+    #BtnDesencriptar {
+        width: 33%;
+        font-size: 100%;
+        padding: 0%;
+        align-items: center
+    }
+    #trash{
+        width: 20%;
+    }
 
 
 }
