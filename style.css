@@ -197,7 +197,7 @@ button:hover {
     gap: 8px;
 
     position: absolute;
-    width: 229px;
+    width: 470px;
     height: 18px;
     left: 240px;
     top: 851px;
@@ -216,7 +216,7 @@ button:hover {
 
 #Advertencia {
     display: flex;
-    width: 205px;
+    width: 450px;
     height: 18px;
     font-family: 'Inter';
     font-weight: 400;
@@ -230,13 +230,6 @@ button:hover {
     /* Inside auto layout */
     flex: none;
     order: 1;
-}
-
-#alerta {
-    
-    background-color: #FFFFFF;
-    padding: 10px;
-    display: none;
 }
 
 #copyButton {
@@ -314,13 +307,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 700px) {
-    #alerta {
-        display: table-cell;
-        width: max-content;
-    grid-row: 5 / 5;
-    grid-column: 2 / 4;
-    top: -2em;
-    }
+
     body {
         width: min-content;
         height: auto;
@@ -347,8 +334,11 @@ button:hover {
         position: relative;
         left: auto;
         top: 50px;
+        width: 380px;
 
     }
+    #advertencia {
+        width: 340px;}
 
     #ingreso {
         grid-row: 2 / 4;
@@ -367,6 +357,10 @@ button:hover {
         height: 500px;
         top: auto;
         padding: 0%;
+    }
+    #mensajes.aparece{
+        height: fit-content;
+        align-items: center;
     }
 
     #PantallaSalida {

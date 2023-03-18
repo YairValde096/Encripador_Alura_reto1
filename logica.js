@@ -147,12 +147,11 @@ function imprimirDiv(contenedor, id, msj) {
     const outputDiv = document.getElementById(contenedor);
     outputDiv.innerHTML += `
     <div id="Mensajes" class="aparece">
-      <p>${msj}</p>
-      <button id="${id}-btn${contador}" class="btn btn-primary" value=${contador} onclick="portapapeles(historialTextos[${contador}])">
-  <img src="Recursos/icono-copy.png">
-</button>
-
-    <div>
+        <p>${msj}</p>
+        <button id="${id}-btn${contador}" class="btn btn-primary" value=${contador} onclick="portapapeles(historialTextos[${contador}])">
+            <img src="Recursos/icono-copy.png">
+        </button>
+    </div>
   `;
 }
 
@@ -205,15 +204,7 @@ function limpiar() {
 </div>
 
 <!--<input type="text" id="ingreso" placeholder="Ingrese el texto aqui" >-->
-<textarea id="ingreso" cols="30" rows="10"placeholder="Ingrese el texto aqui"></textarea>
-    `;
+<textarea id="ingreso" cols="30" rows="10"placeholder="Ingrese el texto aqui"></textarea>`;
 }
 
-function mostrarAviso(mensaje) {
-    var alertElement = document.getElementById("alerta");
-    alertElement.innerHTML = mensaje;
-    alertElement.style.display = "table-cell";
-    setTimeout(function() {
-        alertElement.style.display = "none";
-    }, 1000);
-}
+
