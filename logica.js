@@ -182,7 +182,7 @@ function limpiar() {
 
 </div>
 <div id="frame1">
-    <div id="Advertencia">Solo letras minúsculas y sin acentos</div> 
+    <div id="Advertencia">Solo letras minúsculas y sin acentos, el mensaje se copiará automáticamente al portapapeles.</div> 
     <img id="alr"src="Recursos/Alert.png" alt="">
     
 </div>

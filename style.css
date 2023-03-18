@@ -306,7 +306,7 @@ button:hover {
     animation-duration: .5s;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     body {
         width: min-content;
@@ -335,10 +335,12 @@ button:hover {
         left: auto;
         top: 50px;
         width: 380px;
+        flex-direction: row;
 
     }
     #advertencia {
-        width: 340px;}
+        width: 60%;
+    padding-left: 30px;}
 
     #ingreso {
         grid-row: 2 / 4;
@@ -361,6 +363,7 @@ button:hover {
     #mensajes.aparece{
         height: fit-content;
         align-items: center;
+        width: 100%;
     }
 
     #PantallaSalida {
