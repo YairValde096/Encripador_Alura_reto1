@@ -42,7 +42,7 @@ function Encriptar() {
     // Se obtiene el texto de entrada del usuario desde el elemento de entrada de texto.
     const txt = document.getElementById("ingreso").value;
     if (!verificadorSintaxis(txt)) {
-        return alert("Se estan incumpliendo reglas. (El mensaje tiene mayusculas, acentos o esta vacio)");
+        return no.play() + alert("Se estan incumpliendo reglas. (El mensaje tiene mayusculas, acentos o esta vacio)");
     }
 
     // Variable para almacenar el texto encriptado resultante.
@@ -72,12 +72,11 @@ function Encriptar() {
     if (overflow()) { return no.play() + alert("Se ha llegado al tamaño máximo del contenedor, favor de refrescar la página o utilizar el botón de borrar"); }
 
     // Se muestra el texto encriptado en la consola y se copia al portapapeles.
-    console.log(txtEncriptado);
+    //console.log(txtEncriptado); //Validación para pruebas.
     portapapeles(txtEncriptado);
     historialTextos.push(txtEncriptado);
     imprimirDiv("TextoSalidaEnc", "TextoSalidaEnc2", txtEncriptado);
     contador++;
-    mostrarAviso("Texto copiado al portapapeles");
     ingresoAudio.play();
 
 }
@@ -89,7 +88,7 @@ function Desencriptar() {
     const txt = document.getElementById("ingreso").value;
     let txtOriginal = '';
     if (!verificadorSintaxis(txt)) {
-        return alert("Se estan incumpliendo reglas. (El mensaje tiene mayusculas, acentos o esta vacio)");
+        return no.play() + alert("Se estan incumpliendo reglas. (El mensaje tiene mayusculas, acentos o esta vacio)");
     }
 
     for (let i = 0; i < txt.length; i++) {
@@ -117,9 +116,8 @@ function Desencriptar() {
     portapapeles(txtOriginal);
     historialTextos.push(txtOriginal);
     imprimirDiv("TextoSalidaDes", "TextoSalidaDes2", txtOriginal);
-    console.log(txtOriginal);
+    //console.log(txtOriginal); //Validación para pruebas
     contador++;
-    mostrarAviso("Texto copiado al portapapeles");
     ingresoAudio2.play();
 }
 //Funcion que confirma solo uso de minusculas y espacios
@@ -159,7 +157,7 @@ function portapapeles(msj) {
     // Copia el texto en el portapapeles del usuario
     navigator.clipboard.writeText(msj)
         .then(() => {
-            console.log('Mensaje copiado al portapapeles');
+            //console.log("Mensaje copiado al portapapeles"); //Validación para pruebas
         })
         .catch((err) => {
             console.error('No se pudo copiar el mensaje: ', err);
